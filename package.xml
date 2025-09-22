@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>hpipm-cpp_sample</name>
+  <version>0.0.0</version>
+  <description>The hpipm-cpp_sample package</description>
+  <maintainer email="sugihara@todo.todo">sugihara</maintainer>
+
+  <license>TODO</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>hpipm-cpp</depend>
+</package>
