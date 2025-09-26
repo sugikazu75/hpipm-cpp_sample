@@ -36,5 +36,8 @@ int main() {
   Eigen::VectorXd ubx = std::numeric_limits<double>::max() * Eigen::VectorXd::Ones(dim_var);
 
   hpipm::DenseQpSolver solver(dim_var, dim_eq, dim_ineq);
-  std::cout << solver.solve(H, g, A, b, C, lbg, ubg, lbx, ubx) << std::endl;;
+  solver.solve(H, g, A, b, C, lbg, ubg, lbx, ubx);
+  std::cout << "Optimal solution: " << solver.getOptX().transpose() << std::endl;
+  std::cout << "Optimal dual (BOX): " << solver.getOptLamB().transpose() << std::endl;
+  std::cout << "Optimal dual (INEQ): " << solver.getOptLamG().transpose() << std::endl;
 }
