@@ -3,6 +3,8 @@ project(hpipm-cpp_sample)
 
 find_package(catkin REQUIRED)
 find_package(Eigen3 REQUIRED)
+find_package(blasfeo CONFIG REQUIRED)
+find_package(hpipm CONFIG REQUIRED)
 find_package(hpipm-cpp REQUIRED)
 
 catkin_package(
